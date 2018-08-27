@@ -211,3 +211,20 @@ input[type=submit] {
     background-color: #4aaaa5;
     color: #ffffff;
 }
+
+/*media queries*/
+
+@media screen and (max-width: 980px) {
+    .main-content {
+        width: 600px;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    
+}
