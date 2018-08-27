@@ -4,6 +4,7 @@ html {
 
 nav {
     height: 80px;
+    width: 100%;
     margin-bottom: 20px;
     border-bottom: solid #cccccc;
     background-color: #ffffff;
@@ -11,7 +12,7 @@ nav {
 
 .nav-content {
     position: relative;
-    width: 1000px;
+    width: 960px;
     height: 100%;
     margin: auto;
 }
@@ -94,7 +95,7 @@ h2 {
 }
 
 .main-content {
-    width: 960px;
+    width: 920px;
     margin: auto;
     padding: 20px;
     border: solid 2px #dddddd;
@@ -144,17 +145,18 @@ p {
 
 .box {
     position: relative;
-    margin: 0px 70px 20px 0px;
 }
 
 .leftbox {
     clear: left;
+    margin: 0px 60px 20px 0px;
 }
 
 .squarebox {
     float: left;
-    width: 175px;
-    height: 175px;
+    width: 176px;
+    height: 176px;
+    border: 2px solid black;
 }
 
 .rectanbox {
@@ -164,8 +166,7 @@ p {
 }
 
 #nasa {
-    margin-left: 65px;
-    border: solid 2px blue;
+    margin-left: 60px;
 }
 
 .hybridbox {
@@ -215,16 +216,66 @@ input[type=submit] {
 /*media queries*/
 
 @media screen and (max-width: 980px) {
+    .nav-content {
+        width: 100%;
+    }
+
+    .name {
+        margin-left: 30px;
+    }
+
+    .menu {
+        margin-right: 30px;
+    }
+
     .main-content {
         width: 600px;
         float: left;
+        margin-left: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    
+    .nav-content {
+        width: 96%;
+    }
+
+    .name {
+        margin-left: 0px;
+    }
+
+    .menu {
+        margin-right: 0px;
+    }
+
+    .main-content {
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 640px) {
-    
+    .selfie {
+        width: 100%;
+    }
+
+    .box {
+        clear: both;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .squarebox {
+        float: none;
+    }
+
+    .rectanbox {
+        float: none;
+    }
+
+    #nasa {
+        margin: auto;
+    }
 }
