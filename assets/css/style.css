@@ -40,6 +40,7 @@ h1 {
 }
 
 ul {
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -52,7 +53,7 @@ li {
 }
 
 #aboutmenu {
-    float: left;
+    float: none;
     padding-right: 15px;
     border-right: solid 1px #eeeeee;
 }
@@ -256,8 +257,43 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 640px) {
+    nav {
+        position: static;
+        height: 120px;
+    }
+
+    .nav-content {
+        width: 100%;
+        height: inherit;
+    }
+
+    .name {
+        float: none;
+        width: inherit;
+        height: 70px;
+        margin: auto;
+        background-color: #4aaaa5;
+        color: #ffffff;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .menu {
+        bottom: 0;
+        width: inherit;
+        height: 45px;
+    }
+
+    ul {
+        width: 220px;
+        margin: auto;
+    } 
+
     .selfie {
         width: 100%;
+        height: auto;
     }
 
     .box {
