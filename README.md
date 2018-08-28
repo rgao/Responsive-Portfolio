@@ -1,4 +1,4 @@
-# Second Assignment Part 2: Responsive Portfolio
+#Assignment #2 Part 2: Responsive Portfolio
 
 Task: Improve the basic portfolio with media query functionality
 
